@@ -20,7 +20,7 @@ function ProfitAndLoss(initialVal, quantity, currPrice) {
     var lossPercent = (loss / initialVal) * 100;
 
     showOutput(`Loss: ${loss} and Loss Percent: ${lossPercent}%`);
-  } else if (currPrice > initial) {
+  } else if (currPrice > initialVal) {
     var profit = (currPrice - initialVal) * quantity;
     var profitPercent = (profit / initialVal) * 100;
 
