@@ -17,7 +17,7 @@ function submitHandler() {
 function ProfitAndLoss(initialVal, quantity, currPrice) {
   if (initialVal > currPrice) {
     var loss = (initialVal - currPrice) * quantity;
-    var lossPercent = (loss / initial) * 100;
+    var lossPercent = (loss / initialVal) * 100;
 
     showOutput(`Loss: ${loss} and Loss Percent: ${lossPercent}%`);
   } else if (currPrice > initial) {
